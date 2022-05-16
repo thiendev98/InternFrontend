@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+@mixin centerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Background {
+  position: relative;
+  width: 1918px;
+  height: 935px;
+}
+.footer {
+  position: absolute;
+  top: 855px;
+  left: 150px;
+  right: 0;
+  height: 79px;
+  border-top: 1px solid #dedede;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 129px;
+  line-height: 60px;
+}
+.Sidebar {
+  position: absolute;
+  width: 150px;
+  height: 935px;
+  ul {
+    margin: 0;
+    li {
+      color: #fff;
+      font-size: 16px;
+      line-height: 44px;
+      height: 44px;
+      border-bottom: 1px solid #5c5c5c;
+      font-weight: 700;
+      span {
+        margin-left: 16px;
+      }
+    }
+  }
+  background-color: #191718;
+  width: 150px;
+  height: 935px;
+}
+.Content {
+  position: absolute;
+  left: 150px;
+  height: 935px;
+  top: 0;
+  right: 0;
+  border-bottom: 2px solid #dedede;
+  .image {
+    @include centerItem();
+    padding: 20px 0 30px;
+    img {
+      width: 310px;
+      height: 122px;
+    }
+  }
+  .group1 {
+    background-color: #efefef;
+    text-align: center;
+    height: 210px;
+    margin: 0 129px;
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000000;
+      padding: 38px 0;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 38px;
+      margin: 0 129px;
+    }
+  }
+  .group--item {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 129px 0;
+    .group4,
+    .group2,
+    .group3 {
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+      width: 472px;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .group2 {
+      float: left;
+    }
+    .group4 {
+      float: right;
+    }
+    .item {
+      display: flex;
+      img {
+        width: 129px;
+        height: 129px;
+      }
+      span {
+        margin-left: 16px;
+        text-align: left;
+        font-size: 16px;
+        font-style: Regular;
+      }
+    }
+  }
+}
